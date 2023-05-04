@@ -1,0 +1,134 @@
+html{
+    height: 100vh;
+    background: linear-gradient(45deg, rgb(180, 90, 156), rgb(48, 55, 181));
+}
+
+.container{
+    /* border: 2px solid black; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding: 30px;
+    width: min-content;
+    border-radius: 20px;
+    box-shadow: 2px 1px 10px rgb(55, 174, 242);
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 75px, 75px, 75px, 75px, 75px, 75px, 75px, 75px;
+    grid-template-areas: 
+    ". billAmount"
+    ". tipInput"
+    ". pplInput"
+    "btn btn"
+    ". tipAmount"
+    ". totalBill"
+    ". perHead"
+    "reset reset";
+
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.container:hover{
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.1, 1.1);
+    box-shadow: 2px 2px 10px black;
+}
+h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    text-decoration: underline;
+}
+#btn{
+    grid-area: btn;
+    height: 35px;
+    width: 250px;
+    margin: 0 auto;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px black;
+    font-family:cursive ;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 20px white;
+
+}
+#btn:hover{
+    transition: 0.5s all ease-in-out;
+    background: linear-gradient(45deg, rgb(150, 87, 133), rgb(69, 75, 181));
+    /* transform: scaleX(1.2); */
+}
+#billAmount{
+    grid-area: billAmount;
+    height: 25px;
+    width: 250px;
+}
+#tipInput{
+    grid-area: tipInput;
+    height: 25px;
+    width: 250px;
+}
+#pplInput{
+    grid-area: pplInput;
+    height: 25px;
+    width: 250px;
+}
+#tipAmount{
+    grid-area: tipAmount;
+    height: 25px;
+    width: 250px;
+}
+#totalBill{
+    grid-area: totalBill;
+    height: 25px;
+    width: 250px;
+}
+#perHead{
+    grid-area: perHead;
+    height: 25px;
+    width: 250px;
+}
+
+
+#totalBill::placeholder,
+#tipAmount::placeholder,
+#tipInput::placeholder,
+#billAmount::placeholder,
+#pplInput::placeholder,
+#perHead::placeholder{
+    font-family:cursive ;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    /* padding-left: 10px; */
+    margin: 0;
+
+}
+#reset{
+    grid-area: reset;
+    height: 35px;
+    width: 250px;
+    margin: 0 auto;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px black;
+    font-family:cursive ;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 20px white;
+
+}
+#reset:hover{
+    transition: 0.5s all ease-in-out;
+    background: linear-gradient(45deg, rgb(180, 90, 156), rgb(48, 55, 181));
+}
+input{
+    background: transparent ;
+    outline: none;
+    
+    font-family:cursive ;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 20px white;
+}

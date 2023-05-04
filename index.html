@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tip-Calculator</title>
+</head>
+<body>
+    <h1>Tip-Calculator</h1>
+    <div class="container">
+        Bill Amount$ <input type="number" id="billAmount" placeholder="Enter Your Bill Amount">
+        Tip %  <input type="number" id="tipInput" placeholder="Enter Tip Percentage">
+        People <input type="number" id="pplInput" placeholder="Enter Number of People">
+        <button id="btn">Calculate</button>
+        Tip Amount$  <input type="number" id="tipAmount" placeholder="Calculated Tip Amount">
+        Total Bill $: <input type="number" id="totalBill" placeholder="Total Bill Amount ">
+        Per Head $: <input type="number" id="perHead" placeholder="Each person share ">
+        <button  id="reset" onclick="fun()">Clear/Reset</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
